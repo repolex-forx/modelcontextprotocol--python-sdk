@@ -1,0 +1,116 @@
+[2026-04-09T18:09:40Z] === ENRICH ITERATION 1 START | repo=modelcontextprotocol/python-sdk sha=65247826 ===
+[2026-04-09T18:09:40Z] [iter=1] PHASE START: enrich repo=modelcontextprotocol/python-sdk sha=65247826 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/65247826-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/652478266702ac71a1d03692337bd5207ddbedf4.nq.gz
+[2026-04-09T18:09:49Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-04-09T18:10:07Z] [iter=1] AST store loaded triples=2294685 load_secs=16 mem_mb=968 MB
+[2026-04-09T18:10:07Z] [iter=1] Step 2: Finding LSP targets mem_mb=968 MB
+[2026-04-09T18:10:11Z] [iter=1] LSP targets found call_sites=14079 imports=2154 extends=324 implements=0 secs=4
+[2026-04-09T18:10:15Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=968 MB
+[2026-04-09T18:10:29Z] [iter=1] Position index built positions=157202 nodes_with_types=203377 secs=14 mem_mb=968 MB
+[2026-04-09T18:10:29Z] [iter=1] Step 3: Starting LSP resolution mem_mb=968 MB already_completed_types=[] already_completed_files=0
+[2026-04-09T18:10:29Z] [iter=1] Resolving target type target_type=call_site count=14079
+[2026-04-09T18:10:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.8 files_done=0 resolved=0 errors=0 current=tests/shared/test_streamable_http.py
+[2026-04-09T18:13:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.0 files_done=1 resolved=178 errors=203 current=tests/server/fastmcp/resources/test_resources.py
+[2026-04-09T18:14:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.0 files_done=4 resolved=254 errors=268 current=tests/experimental/tasks/client/test_handlers.py
+[2026-04-09T18:16:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.2 files_done=5 resolved=330 errors=414 current=tests/experimental/tasks/test_elicitation_scenarios.py
+[2026-04-09T18:18:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.0 files_done=6 resolved=373 errors=534 current=tests/issues/test_192_request_id.py
+[2026-04-09T18:20:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.5 files_done=8 resolved=390 errors=631 current=src/mcp/cli/cli.py
+[2026-04-09T18:21:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.3 files_done=9 resolved=469 errors=687 current=tests/experimental/tasks/server/test_server.py
+[2026-04-09T18:22:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.2 files_done=10 resolved=522 errors=810 current=tests/experimental/tasks/client/test_tasks.py
+[2026-04-09T18:23:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.3 files_done=11 resolved=543 errors=881 current=tests/experimental/tasks/test_request_context.py
+[2026-04-09T18:24:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.0 files_done=14 resolved=578 errors=926 current=src/mcp/server/transport_security.py
+[2026-04-09T18:25:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.5 files_done=16 resolved=595 errors=961 current=tests/client/test_session.py
+[2026-04-09T18:26:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=16.4 files_done=17 resolved=657 errors=1018 current=src/mcp/server/experimental/task_context.py
+[2026-04-09T18:27:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=17.6 files_done=18 resolved=667 errors=1100 current=src/mcp/cli/claude.py
+[2026-04-09T18:28:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=18.5 files_done=20 resolved=757 errors=1155 current=src/mcp/server/elicitation.py
+[2026-04-09T18:29:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=19.5 files_done=22 resolved=784 errors=1223 current=src/mcp/server/fastmcp/server.py
+[2026-04-09T18:31:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=21.4 files_done=23 resolved=815 errors=1343 current=tests/server/test_completion_with_context.py
+[2026-04-09T18:32:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=23.3 files_done=26 resolved=845 errors=1467 current=tests/server/fastmcp/test_server.py
+[2026-04-09T18:35:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=26.0 files_done=27 resolved=997 errors=1645 current=src/mcp/server/fastmcp/resources/types.py
+[2026-04-09T18:37:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=27.4 files_done=30 resolved=1123 errors=1744 current=tests/experimental/tasks/test_spec_compliance.py
+[2026-04-09T18:37:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=28.0 files_done=33 resolved=1159 errors=1779 current=examples/snippets/clients/pagination_client.py
+[2026-04-09T18:40:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=30.8 files_done=35 resolved=1199 errors=1964 current=src/mcp/client/streamable_http.py
+[2026-04-09T18:42:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=32.4 files_done=36 resolved=1228 errors=2075 current=src/mcp/server/fastmcp/tools/base.py
+[2026-04-09T18:44:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=34.5 files_done=38 resolved=1444 errors=2209 current=tests/server/lowlevel/test_server_pagination.py
+[2026-04-09T18:44:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=35.2 files_done=40 resolved=1470 errors=2255 current=examples/clients/simple-task-interactive-client/mcp_simple_task_interactive_client/main.py
+[2026-04-09T18:45:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=36.0 files_done=42 resolved=1533 errors=2305 current=tests/server/fastmcp/auth/test_auth_integration.py
+[2026-04-09T18:47:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=37.8 files_done=43 resolved=1613 errors=2427 current=tests/server/lowlevel/test_func_inspection.py
+[2026-04-09T18:48:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=38.7 files_done=45 resolved=1633 errors=2484 current=src/mcp/server/lowlevel/server.py
+[2026-04-09T18:50:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=40.6 files_done=46 resolved=1673 errors=2610 current=.github/actions/conformance/client.py
+[2026-04-09T18:51:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=41.6 files_done=47 resolved=1706 errors=2677 current=src/mcp/server/auth/middleware/bearer_auth.py
+[2026-04-09T18:52:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=42.3 files_done=50 resolved=1812 errors=2727 current=tests/server/test_sse_security.py
+[2026-04-09T18:52:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=43.0 files_done=51 resolved=1827 errors=2771 current=src/mcp/server/experimental/task_result_handler.py
+[2026-04-09T18:53:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=43.5 files_done=53 resolved=1831 errors=2805 current=tests/shared/test_sse.py
+[2026-04-09T18:54:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=44.5 files_done=54 resolved=1906 errors=2873 current=tests/server/test_lowlevel_input_validation.py
+[2026-04-09T18:54:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=45.2 files_done=56 resolved=1935 errors=2916 current=tests/experimental/tasks/client/test_capabilities.py
+[2026-04-09T18:55:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=45.7 files_done=58 resolved=1960 errors=2951 current=tests/server/auth/test_provider.py
+[2026-04-09T18:56:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=46.3 files_done=60 resolved=1974 errors=2994 current=tests/issues/test_342_base64_encoding.py
+[2026-04-09T18:56:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=47.0 files_done=63 resolved=1995 errors=3038 current=tests/client/test_list_methods_cursor.py
+[2026-04-09T18:58:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=49.0 files_done=65 resolved=2045 errors=3173 current=examples/snippets/servers/audio_example.py
+[2026-04-09T18:59:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=49.8 files_done=70 resolved=2206 errors=3226 current=tests/server/fastmcp/test_tool_manager.py
+[2026-04-09T19:01:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=51.9 files_done=71 resolved=2234 errors=3362 current=tests/client/test_session_group.py
+[2026-04-09T19:02:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=52.4 files_done=73 resolved=2310 errors=3395 current=examples/clients/simple-chatbot/mcp_simple_chatbot/main.py
+[2026-04-09T19:02:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=53.1 files_done=74 resolved=2358 errors=3440 current=src/mcp/client/auth/extensions/client_credentials.py
+[2026-04-09T19:03:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=53.6 files_done=75 resolved=2397 errors=3477 current=tests/server/auth/middleware/test_bearer_auth.py
+[2026-04-09T19:03:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=54.2 files_done=76 resolved=2422 errors=3513 current=tests/server/test_streamable_http_security.py
+[2026-04-09T19:04:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=54.8 files_done=77 resolved=2435 errors=3551 current=tests/server/test_session.py
+[2026-04-09T19:05:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=55.6 files_done=79 resolved=2482 errors=3604 current=tests/server/test_cancel_handling.py
+[2026-04-09T19:05:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=56.2 files_done=80 resolved=2502 errors=3643 current=src/mcp/server/fastmcp/prompts/manager.py
+[2026-04-09T19:06:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=56.7 files_done=83 resolved=2515 errors=3681 current=tests/server/fastmcp/test_url_elicitation.py
+[2026-04-09T19:07:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=57.4 files_done=84 resolved=2544 errors=3724 current=tests/server/fastmcp/test_func_metadata.py
+[2026-04-09T19:07:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=58.1 files_done=85 resolved=2583 errors=3772 current=tests/server/fastmcp/resources/test_file_resources.py
+[2026-04-09T19:08:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=58.9 files_done=87 resolved=2611 errors=3821 current=examples/clients/sse-polling-client/mcp_sse_polling_client/main.py
+[2026-04-09T19:09:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=59.5 files_done=90 resolved=2716 errors=3865 current=examples/snippets/clients/display_utilities.py
+[2026-04-09T19:09:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=60.2 files_done=93 resolved=2760 errors=3907 current=tests/test_types.py
+[2026-04-09T19:10:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=60.9 files_done=95 resolved=2799 errors=3954 current=examples/servers/everything-server/mcp_everything_server/server.py
+[2026-04-09T19:11:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=61.7 files_done=96 resolved=2838 errors=4010 current=src/mcp/server/fastmcp/prompts/base.py
+[2026-04-09T19:12:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=62.5 files_done=99 resolved=2876 errors=4057 current=tests/experimental/tasks/server/test_store.py
+[2026-04-09T19:13:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=63.5 files_done=100 resolved=2884 errors=4124 current=src/mcp/client/auth/utils.py
+[2026-04-09T19:14:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=64.4 files_done=103 resolved=2914 errors=4182 current=examples/servers/simple-task/mcp_simple_task/__main__.py
+[2026-04-09T19:15:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=65.4 files_done=106 resolved=2980 errors=4253 current=examples/servers/simple-auth/mcp_simple_auth/simple_auth_provider.py
+[2026-04-09T19:16:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=66.8 files_done=109 resolved=3042 errors=4344 current=src/mcp/server/session.py
+[2026-04-09T19:17:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=68.0 files_done=110 resolved=3054 errors=4420 current=src/mcp/os/win32/utilities.py
+[2026-04-09T19:18:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=68.5 files_done=112 resolved=3086 errors=4456 current=examples/fastmcp/desktop.py
+[2026-04-09T19:18:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=69.2 files_done=115 resolved=3138 errors=4499 current=src/mcp/server/fastmcp/utilities/types.py
+[2026-04-09T19:20:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=70.8 files_done=118 resolved=3211 errors=4603 current=src/mcp/client/sse.py
+[2026-04-09T19:21:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=71.3 files_done=119 resolved=3224 errors=4641 current=tests/experimental/tasks/server/test_context.py
+[2026-04-09T19:21:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=72.0 files_done=121 resolved=3237 errors=4686 current=src/mcp/shared/memory.py
+[2026-04-09T19:22:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=72.7 files_done=125 resolved=3263 errors=4729 current=src/mcp/client/session_group.py
+[2026-04-09T19:23:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=73.5 files_done=126 resolved=3278 errors=4786 current=examples/clients/conformance-auth-client/mcp_conformance_auth_client/__init__.py
+[2026-04-09T19:23:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=74.1 files_done=127 resolved=3308 errors=4822 current=examples/snippets/servers/tool_errors.py
+[2026-04-09T19:24:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=74.6 files_done=130 resolved=3330 errors=4859 current=src/mcp/shared/experimental/tasks/in_memory_task_store.py
+[2026-04-09T19:24:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=75.1 files_done=131 resolved=3340 errors=4893 current=tests/shared/test_exceptions.py
+[2026-04-09T19:25:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=75.9 files_done=136 resolved=3414 errors=4941 current=tests/server/test_lifespan.py
+[2026-04-09T19:26:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=76.4 files_done=139 resolved=3434 errors=4977 current=examples/servers/simple-pagination/mcp_simple_pagination/server.py
+[2026-04-09T19:26:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=77.0 files_done=144 resolved=3496 errors=5015 current=src/mcp/client/websocket.py
+[2026-04-09T19:28:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=78.6 files_done=147 resolved=3541 errors=5120 current=examples/servers/simple-streamablehttp/mcp_simple_streamablehttp/server.py
+[2026-04-09T19:28:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=79.1 files_done=150 resolved=3585 errors=5153 current=tests/server/fastmcp/resources/test_resource_template.py
+[2026-04-09T19:29:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=79.8 files_done=152 resolved=3610 errors=5198 current=examples/servers/simple-task/mcp_simple_task/server.py
+[2026-04-09T19:30:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=80.5 files_done=158 resolved=3637 errors=5241 current=src/mcp/server/lowlevel/experimental.py
+[2026-04-09T19:30:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=81.0 files_done=159 resolved=3639 errors=5279 current=tests/experimental/tasks/client/test_poll_task.py
+[2026-04-09T19:31:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=82.2 files_done=163 resolved=3678 errors=5354 current=examples/servers/simple-task-interactive/mcp_simple_task_interactive/server.py
+[2026-04-09T19:32:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=82.9 files_done=168 resolved=3718 errors=5401 current=tests/client/test_sampling_callback.py
+[2026-04-09T19:33:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=83.4 files_done=171 resolved=3757 errors=5434 current=tests/client/test_resource_cleanup.py
+[2026-04-09T19:33:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=84.0 files_done=176 resolved=3776 errors=5472 current=src/mcp/shared/tool_name_validation.py
+[2026-04-09T19:34:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=84.5 files_done=179 resolved=3801 errors=5508 current=src/mcp/server/auth/routes.py
+[2026-04-09T19:34:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=85.1 files_done=182 resolved=3832 errors=5544 current=examples/servers/simple-auth/mcp_simple_auth/server.py
+[2026-04-09T19:35:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=85.6 files_done=186 resolved=3853 errors=5582 current=examples/servers/sse-polling-demo/mcp_sse_polling_demo/event_store.py
+[2026-04-09T19:35:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=86.2 files_done=192 resolved=3920 errors=5621 current=src/mcp/os/posix/utilities.py
+[2026-04-09T19:36:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=86.8 files_done=196 resolved=3950 errors=5655 current=tests/server/fastmcp/test_url_elicitation_error_throw.py
+[2026-04-09T19:37:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=87.4 files_done=201 resolved=3979 errors=5694 current=examples/snippets/servers/elicitation.py
+[2026-04-09T19:37:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=87.9 files_done=206 resolved=3998 errors=5727 current=tests/issues/test_1338_icons_and_metadata.py
+[2026-04-09T19:38:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=88.4 files_done=212 resolved=4050 errors=5763 current=src/mcp/shared/context.py
+[2026-04-09T19:38:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=89.0 files_done=217 resolved=4071 errors=5801 current=examples/snippets/servers/lowlevel/structured_output.py
+[2026-04-09T19:39:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=89.5 files_done=224 resolved=4091 errors=5835 current=examples/snippets/servers/images.py
+[2026-04-09T19:39:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=90.3 files_done=233 resolved=4139 errors=5887 current=src/mcp/server/stdio.py
+[2026-04-09T19:40:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=90.8 files_done=243 resolved=4182 errors=5922 current=src/mcp/server/lowlevel/func_inspection.py
+[2026-04-09T19:41:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=91.4 files_done=254 resolved=4208 errors=5962 current=examples/snippets/servers/prompt_change_notifications.py
+[2026-04-09T19:41:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=91.9 files_done=271 resolved=4230 errors=5996 current=examples/snippets/servers/resource_templates.py
+[2026-04-09T19:41:59Z] [iter=1] Target type resolved target_type=call_site resolved=4241 errors=6022 secs=5490 mem_mb=968 MB
+[2026-04-09T19:41:59Z] [iter=1] Resolving target type target_type=import_statement count=2154
+[2026-04-09T19:42:06Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=92.4 files_done=126 resolved=807 errors=0 current=examples/servers/sse-polling-demo/mcp_sse_polling_demo/server.py
+[2026-04-09T19:42:08Z] [iter=1] Target type resolved target_type=import_statement resolved=1230 errors=0 secs=9 mem_mb=968 MB
+[2026-04-09T19:42:08Z] [iter=1] Resolving target type target_type=extends_clause count=324
+[2026-04-09T19:42:12Z] [iter=1] Target type resolved target_type=extends_clause resolved=290 errors=0 secs=4 mem_mb=968 MB
+[2026-04-09T19:42:26Z] [iter=1] Step 5: Writing final enrichment file triples=135118
+[2026-04-09T19:42:29Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/652478266702ac71a1d03692337bd5207ddbedf4.nq.gz size_kb=3447
+[2026-04-09T19:42:29Z] [iter=1] PHASE END: enrich elapsed_s=5569 elapsed_min=92.8 total_triples=135118
